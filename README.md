@@ -113,6 +113,14 @@ bank-marketing-ml-project/
 ├── README.md
 ├── test_data.csv
 │
+├── data/
+│   ├── raw/
+│   │   └── bank-full.csv
+│   │
+│   └── processed/
+│       ├── train_data.csv
+│       └── test_data.csv
+│
 ├── models/
 │   ├── logistic_regression.joblib
 │   ├── decision_tree.joblib
@@ -120,14 +128,9 @@ bank-marketing-ml-project/
 │   ├── naive_bayes.joblib
 │   └── support_vector_machine.joblib
 │
-├── results/
-│   ├── model_comparison.csv
-│   └── confusion_matrix/
-│
-└── data/
-    └── processed/
-        ├── train_data.csv
-        └── test_data.csv
+└── results/
+    ├── model_comparison.csv
+    └── confusion_matrix/
 ```
 
 ## 7. Streamlit Application
@@ -151,6 +154,4 @@ This project compares five machine learning classification algorithms using the 
 
 The experimental results show that each model performs differently across the evaluation metrics. kNN achieved the highest Accuracy, while Logistic Regression achieved the highest AUC and Recall. Decision Tree achieved the highest F1-Score and MCC.
 
-Based on the overall evaluation, Decision Tree was selected as the winner because it provides a better balance between Precision and Recall and the highest MCC among the evaluated models.
-
-The project demonstrates how machine learning classification algorithms can be applied to marketing data to support customer subscription prediction.
+Based on the overall evaluation, Decision Tree was selected as the winner because it provides a better balance between Precision and Recall and the highest MCC among the evaluated models. The project demonstrates how machine learning classification algorithms can be applied to marketing data to support customer subscription prediction.
